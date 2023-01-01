@@ -45,5 +45,7 @@ export function BookShelf() {
 
 function BookListPage() {
     const bookShelf = useContext(BookContext);
-    return <BookList list={bookShelf?.books() || []} />;
+    return <Show when={(bookShelf?.books() || []).length > 0} fallback={'Add a book to see it here'}>
+        <BookList list={bookShelf!.books()} />
+    </Show>;
 }
