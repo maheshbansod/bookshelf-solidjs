@@ -1,0 +1,39 @@
+.BookCard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.BookName {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.BookAuthor {
+    font-style: italic;
+    color: grey;
+}
+
+.IconButton {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RemoveButton {
+    background: red;
+    color: white;
+}
+
+.AddButton {
+    background-color: green;
+    color: white;
+}
